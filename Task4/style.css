@@ -1,0 +1,263 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* Header */
+
+header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 80px;
+
+    background:#222;
+}
+
+.logo{
+
+    color:white;
+
+    font-size:30px;
+
+    font-weight:bold;
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:30px;
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+}
+
+nav a:hover{
+
+    color:#00bfff;
+}
+
+/* Hero */
+
+.hero{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:80px;
+
+    gap:60px;
+
+    background:white;
+}
+
+.hero-text{
+
+    flex:1;
+}
+
+.hero-text h1{
+
+    font-size:50px;
+
+    margin-bottom:20px;
+}
+
+.hero-text p{
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+}
+
+.hero-text button{
+
+    padding:15px 30px;
+
+    border:none;
+
+    background:#007bff;
+
+    color:white;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:18px;
+}
+
+.hero-image{
+
+    flex:1;
+}
+
+.hero-image img{
+
+    width:100%;
+
+    border-radius:15px;
+}
+
+/* Services */
+
+.services{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    padding:60px;
+
+    background:#f4f4f4;
+}
+
+.card{
+
+    background:white;
+
+    padding:30px;
+
+    width:300px;
+
+    text-align:center;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.card h2{
+
+    margin-bottom:15px;
+}
+
+/* Footer */
+
+footer{
+
+    background:#222;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+}
+
+/* ========================= */
+/* Tablet */
+/* ========================= */
+
+@media(max-width:768px){
+
+header{
+
+    flex-direction:column;
+
+    gap:20px;
+
+    padding:20px;
+}
+
+nav ul{
+
+    flex-direction:column;
+
+    align-items:center;
+}
+
+.hero{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    padding:40px;
+}
+
+.hero h1{
+
+    font-size:36px;
+}
+
+.hero p{
+
+    font-size:18px;
+}
+
+.services{
+
+    flex-direction:column;
+
+    align-items:center;
+}
+
+.card{
+
+    width:90%;
+}
+
+}
+
+/* ========================= */
+/* Mobile */
+/* ========================= */
+
+@media(max-width:480px){
+
+.logo{
+
+    font-size:24px;
+}
+
+.hero{
+
+    padding:25px;
+}
+
+.hero h1{
+
+    font-size:30px;
+}
+
+.hero p{
+
+    font-size:16px;
+}
+
+.hero button{
+
+    width:100%;
+}
+
+nav ul{
+
+    gap:12px;
+}
+
+}
